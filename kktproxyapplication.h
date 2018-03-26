@@ -11,7 +11,7 @@ class KKTProxyApplication : public QCoreApplication
     KKT *kkt;
     QTcpServer *tcpServer;
 public:
-    KKTProxyApplication(int argc, char **argv);
+    KKTProxyApplication(int &argc, char **argv);
     virtual ~KKTProxyApplication();
     void initialize();
 signals:

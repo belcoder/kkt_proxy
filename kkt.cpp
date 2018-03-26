@@ -59,6 +59,7 @@ void KKT::initialize(const QString &addr, int port)
         checkError();
     // адрес TCPIP
     wchar_t buff[255];
+	memset(buff, 0, 255);
     if (addr.length() > 254)
         throw Exception(trUtf8("IP адрес слишком длинный"));
     addr.toWCharArray(buff);

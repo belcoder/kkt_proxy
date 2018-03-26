@@ -10,7 +10,7 @@
 #include "kkt.h"
 #include "exception.h"
 
-KKTProxyApplication::KKTProxyApplication(int argc, char **argv):
+KKTProxyApplication::KKTProxyApplication(int &argc, char **argv):
     QCoreApplication(argc, argv)
 {
     tcpServer = new QTcpServer();
